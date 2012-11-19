@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Duck	duck.h	/^class Duck$/;"	c
+FlyBehavior	flybehavior.h	/^class FlyBehavior$/;"	c
+FlyWithWings	flybehavior.h	/^class FlyWithWings:public FlyBehavior$/;"	c
+MallardDuck	mallardduck.h	/^	MallardDuck()$/;"	f	class:MallardDuck
+MallardDuck	mallardduck.h	/^class MallardDuck:public Duck$/;"	c
+PerformFly	duck.h	/^	void PerformFly() { flybehavior_->fly(); }$/;"	f	class:Duck
+PerformQuack	duck.h	/^	void PerformQuack() { quackbehavior_->quack(); }$/;"	f	class:Duck
+Quack	quackbehavior.h	/^class Quack:public QuackBehavior$/;"	c
+QuackBehavior	quackbehavior.h	/^class QuackBehavior$/;"	c
+STRATEGY_PATTERN_DUCK_H	duck.h	2;"	d
+STRATEGY_PATTERN_FLYBEHAVIOR_H	flybehavior.h	2;"	d
+STRATEGY_PATTERN_MALLARDDUCK_H	mallardduck.h	2;"	d
+STRATEGY_PATTERN_QUACKBEHAVIOR_H	quackbehavior.h	2;"	d
+Swim	duck.cpp	/^void Duck::Swim()$/;"	f	class:Duck
+display	duck.h	/^	virtual	void display(){};$/;"	f	class:Duck
+display	mallardduck.cpp	/^void MallardDuck::display()$/;"	f	class:MallardDuck
+fly	flybehavior.cpp	/^void FlyWithWings::fly()$/;"	f	class:FlyWithWings
+fly	flybehavior.h	/^	virtual void fly() {}$/;"	f	class:FlyBehavior
+flybehavior_	duck.h	/^	FlyBehavior* flybehavior_;$/;"	m	class:Duck
+main	main.cpp	/^int main()$/;"	f
+quack	quackbehavior.cpp	/^void Quack::quack()$/;"	f	class:Quack
+quack	quackbehavior.h	/^	virtual void quack() {}$/;"	f	class:QuackBehavior
+quackbehavior_	duck.h	/^	QuackBehavior* quackbehavior_;$/;"	m	class:Duck
+set_flybehavior	duck.h	/^	void set_flybehavior(FlyBehavior* fb) { flybehavior_=fb; }$/;"	f	class:Duck
+set_quackbehavior	duck.h	/^	void set_quackbehavior(QuackBehavior* qb) { quackbehavior_=qb; }$/;"	f	class:Duck
