@@ -11,5 +11,14 @@ class FlyWithWings:public FlyBehavior
 public:
 	void Fly();
 };
-
+class FlyRocketPowered:public FlyBehavior
+{
+public:
+	void Fly();
+};
+class FlyNoWay:public FlyBehavior
+{
+public:
+	void Fly();
+};
 #endif

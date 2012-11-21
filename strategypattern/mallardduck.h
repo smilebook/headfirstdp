@@ -5,7 +5,7 @@
 class FlyBehavior;
 class QuackBehavior;
 class FlyWithWings;
-class Quack;
+class Rquack;
 
 class MallardDuck:public Duck
 {
