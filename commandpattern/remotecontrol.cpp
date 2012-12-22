@@ -10,6 +10,7 @@ RemoteControl::RemoteControl()
 		on_commands_.push_back(no_command_);
 		off_commands_.push_back(no_command_);
 	}
+	undo_command_ = no_command_;
 }
 RemoteControl::~RemoteControl()
 {
@@ -23,8 +24,14 @@ void RemoteControl::SetCommand(int slot,Command* on_command,Command* off_command
 void RemoteControl::OnButtonWasPushed(int slot)
 {
 	on_commands_[slot]->Execute();
+	undo_command_ = on_commands_[slot];
 }
 void RemoteControl::OffButtonWasPushed(int slot)
 {
 	off_commands_[slot]->Execute();
+	undo_command_ = off_commands_[slot];
+}
+void RemoteControl::UndoButtonWasPushed()
+{
+	undo_command_->Undo();
 }

@@ -15,26 +15,26 @@ void Light::Off()
 
 void CeilingFan::Medium()
 {
-	speed_ = "Medium";
-	cout<<describe_<<" ceiling fan is on "<<speed_<<endl;
+	speed_ = kMedium;
+	cout<<describe_<<" ceiling fan is on medium"<<endl;
 }
 
 void CeilingFan::High()
 {
-	speed_ = "High";
-	cout<<describe_<<" ceiling fan is on "<<speed_<<endl;
+	speed_ = kHigh;
+	cout<<describe_<<" ceiling fan is on high"<<endl;
 }
 
 void CeilingFan::Low()
 {
-	speed_ = "Low";
-	cout<<describe_<<" ceiling fan is on "<<speed_<<endl;
+	speed_ = kLow;
+	cout<<describe_<<" ceiling fan is on low"<<endl;
 }
 
 void CeilingFan::Off()
 {
+	speed_ = kOff;
 	cout<<describe_<<" ceiling fan is off"<<endl;
-	speed_ = "";
 }
 
 void Stereo::On()
